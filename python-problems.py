@@ -32,24 +32,49 @@
 
 # jumpingOnClouds(c, k)
 
-c = [0, 0, 0, 1, 0, 0]
-def jumpingOnClouds(c):
-  i = 0
-  total = 0
-  while i < len(c) - 1 :
-    print(i)
-    if i == len(c) - 2:
-      total += 1
-      i += 1
-    elif c[i + 2] == 0:
-      total += 1
-      i += 2
-    else:
-      i += 1
-      total += 1
+# c = [0, 0, 0, 1, 0, 0]
+# def jumpingOnClouds(c):
+#   i = 0
+#   total = 0
+#   while i < len(c) - 1 :
+#     print(i)
+#     if i == len(c) - 2:
+#       total += 1
+#       i += 1
+#     elif c[i + 2] == 0:
+#       total += 1
+#       i += 2
+#     else:
+#       i += 1
+#       total += 1
     
-  print(total)
+#   print(total)
   
 
-jumpingOnClouds(c)
+# jumpingOnClouds(c)
+
+# arr = [1, 1, 2, 2, 3]
+
+# def migratoryBirds(arr):
+    
+      
+
+# migratoryBirds(arr)
+
+# bubble sort
+
+# arr = [39, 12, 18, 85, 72, 10, 2, 18]
+
+# def bubble_sort(arr):
+#   while True:
+#     swapped = False
+#     for index in range(len(arr) - 1):
+#       if arr[index] > arr[index + 1]:
+#         swapped = True
+#         arr[index], arr[index + 1] = arr[index + 1], arr[index]
+#     if swapped == False:
+#       print(arr)    #or return
+#       break
+
+# bubble_sort(arr)
     
