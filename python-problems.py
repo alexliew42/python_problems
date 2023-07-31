@@ -53,13 +53,24 @@
 
 # jumpingOnClouds(c)
 
-# arr = [1, 1, 2, 2, 3]
+arr = [1, 4, 4, 4, 5, 3, 2, 2, 2]
 
-# def migratoryBirds(arr):
+def migratoryBirds(arr):
+    bird_dict = {}
+    for number in arr:
+      if number in bird_dict:
+        bird_dict[number] += 1    
+      else:
+        bird_dict[number] = 1
     
+    maxValue = max(bird_dict.values())
+    
+    maxKeys = [key for key in bird_dict.keys() if bird_dict[key] == maxValue]
+
+    return (min(maxKeys))
       
 
-# migratoryBirds(arr)
+migratoryBirds(arr)
 
 # bubble sort
 
@@ -77,4 +88,7 @@
 #       break
 
 # bubble_sort(arr)
+
+
+
     
