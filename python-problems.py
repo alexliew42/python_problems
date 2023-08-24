@@ -89,6 +89,39 @@
 
 # bubble_sort(arr)
 
+# numRows=5
+# finalNums=[]
+# finalNums.append([1])
+# for i in range(numRows-1):
+#     # for number in 4 => 1, 2, 3, 4
+#     newRow=[1]
+#     for j in range(i):
+#         #for number in 1, 2, 3, 4 => 1, 1, 2 , 1, 2, 3, 1, 2, 3, 4
+#           newRow.append(finalNums[i][j]+finalNums[i][j+1])
+#           #
+#     newRow.append(1)
+#     finalNums.append(newRow)
+# print(finalNums)
+  
 
+# for j in range(5):
+#   print(j)
 
-    
+# num_rows = 5
+# 0[1]0
+# 0[1, 1]0
+# 0[1, 2, 1]0
+# 0[1, 3, 3, 1]0
+# 0[1, 4, 6, 4, 1]0
+
+num_rows = 5
+triangle = [[1]]
+for i in range(num_rows - 1):
+    place_holder = [0] + triangle[-1] + [0]
+    row = []
+    for j in range(len(triangle[-1]) + 1):
+      row.append(place_holder[j] + place_holder[j + 1])
+    triangle.append(row)
+
+print(triangle)
+
